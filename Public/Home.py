@@ -16,6 +16,10 @@ section_text = text['Landing Page']
 section_images = images['Landing Page']
 
 
+# Functions
+def donate_button():
+    ss.donate = True
+
 # Initialize
 st.set_page_config(page_title='Project Blue', page_icon='💙', layout="centered", initial_sidebar_state="auto", menu_items=None)
 
@@ -98,9 +102,31 @@ add_vertical_space(2)
 
 
 # Donate
+col1, col2 = st.columns(2)
+with col1:
 
-apply = st.button('Apply now', type='primary')
+    # possibly photo?
+
+    st.caption('DONATE')
+    donate = st.button('Donate now', type='primary', on_click=donate_button)
+    if 'donate' not in ss:
+        ss.donate = False
+    if ss.donate:
+        with st.container(border=True):
+            st.write('test')
+
+            # donate details
+
+with col2:
+    st.caption('APPLY')
+
+    # possibly photo
+
+    apply = st.button('Apply now', type='primary')
+
+add_vertical_space(2)
+
 
 # Sponsors and partners
-st.header('Our Sponsors')
+st.caption('OUR SPONSORS')
 # st.image()
