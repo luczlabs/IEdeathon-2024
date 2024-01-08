@@ -1,3 +1,11 @@
+colors = {
+    'black':'#3133F',
+    'main':'#164D76',
+    'secondary':'0077B6',
+    'accent':'#00B4DB',
+    'white':'#FFFFFF'
+}
+
 text = {
     'Landing Page' : {
         'org_info' : 'Project Blue (PB) is a youth-led nonprofit organization that focuses on raising awareness and providing sustainable solutions on ocean pollution and marine conservation.',
@@ -44,7 +52,7 @@ landing_page_impact = [
 
 images = {
     'Landing Page' : {
-        'background_image' : "https://scontent.xx.fbcdn.net/v/t1.15752-9/413936376_1915767952226636_2650962183775529488_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=510075&_nc_eui2=AeGAcQHe4jcBWqO0YIbB5qrvgGtgQFmnpuOAa2BAWaem46QHNp5BsZBwH-b1qulhoH6Pm2Ph_NKhIZNVjq8x4C-E&_nc_ohc=TeoLteRW8OwAX_ng2uw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&cb_e2o_trans=q&oh=03_AdTNeJZSwKeWWPffzg9l77t2tbcKnOQvYsA_n5szECltdQ&oe=65C07840"
+        'background_image' : 'https://scontent.xx.fbcdn.net/v/t1.15752-9/413257242_374704405145752_9130619688692993285_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=510075&_nc_eui2=AeHhYk5S5qfic3QDnLJwQCwJ07PmekSGYubTs-Z6RIZi5tnQ2ZbnqbO2ZEz7qgc0qXdaObesivYkjER87xKSZk7y&_nc_ohc=luzXxQUCCv4AX9UrTYN&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&cb_e2o_trans=q&oh=03_AdSxSGtijtGFER6HHkFmvYGX1oldPHUVLjtX-0mJzvMW-A&oe=65C1BF02'
 
     }
 

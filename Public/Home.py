@@ -6,12 +6,12 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 
 
 # Imported
-from data import landing_page_impact, text, images
+from data import landing_page_impact, text, images, colors
 
 
 # Variables
 ss = st.session_state
-main_color = '#4169E1'
+main_color = colors['main']
 section_text = text['Landing Page']
 section_images = images['Landing Page']
 
@@ -25,16 +25,16 @@ st.set_page_config(page_title='Project Blue', page_icon='💙', layout="centered
 
 
 # Background
-background_image = f"""
-<style>
-[data-testid="stAppViewContainer"] > .main \u007b
-    background-image: url('{section_images['background_image']}');
-    background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
-    background-position: center;  
-    background-repeat: no-repeat;
-\u007d
-</style>
-"""
+# background_image = f"""
+# <style>
+# [data-testid="stAppViewContainer"] > .main \u007b
+#     background-image: url('{section_images['background_image']}');
+#     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
+#     background-position: center;  
+#     background-repeat: ;
+# \u007d
+# </style>
+# """
 
 # st.markdown(background_image, unsafe_allow_html=True)
 
@@ -51,7 +51,7 @@ st.markdown(f"""
     </div>""",
     unsafe_allow_html=True
 )
-add_vertical_space(1)
+add_vertical_space(20)
 
 
 # Information about the organization
