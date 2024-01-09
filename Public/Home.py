@@ -3,22 +3,23 @@ import streamlit as st
 import pandas as pd
 from streamlit_extras.metric_cards import style_metric_cards
 from streamlit_extras.add_vertical_space import add_vertical_space
+from streamlit_extras.switch_page_button import switch_page
 
 
 # Imported
-from data import landing_page_impact, text, images, colors
+from data import landing_page_impact, text, colors, get_image, donation_methods
 
 
 # Variables
 ss = st.session_state
 main_color = colors['main']
 section_text = text['Landing Page']
-section_images = images['Landing Page']
 
 
 # Functions
 def donate_button():
     ss.donate = True
+
 
 # Initialize
 st.set_page_config(page_title='Project Blue', page_icon='💙', layout="centered", initial_sidebar_state="auto", menu_items=None)
@@ -51,7 +52,7 @@ st.markdown(f"""
     </div>""",
     unsafe_allow_html=True
 )
-add_vertical_space(20)
+add_vertical_space(2)
 
 
 # Information about the organization
@@ -66,6 +67,7 @@ with col2:
         st.markdown(f"**:blue[MORE THAN CLEANUPS.]**\n\n{section_text['slogan_info']}")
     
 add_vertical_space(2)
+
 
 # Impact by numbers
 st.caption('IMPACT BY NUMBERS')
@@ -83,7 +85,39 @@ add_vertical_space(1)
 
 # Features
 st.caption('AS FEATURED IN')
-# to_be_added
+with st.container(border=True):
+    add_vertical_space(1)
+    row_1 = ['ABSCBN.png', 'GMANews.png', 'CNN.PNG', 'PTV.png', 'DailyGuardian.png']
+    row_1_links = [
+        'https://web.facebook.com/abscbnNEWS/posts/10159569761440168',
+        'https://www.gmanetwork.com/news/lifestyle/hobbiesandactivities/789641/dlsu-student-designs-boat-made-of-plastic-bottles/story/',
+        'https://www.youtube.com/watch?v=TIiKjqgRzQU',
+        'https://www.youtube.com/watch?v=XSs7Pe4WGUw&feature=youtu.be',
+        'https://web.facebook.com/237494442937195/posts/4475275605825703/?d=n&_rdc=1&_rdr'
+    ]
+    row_2 = ['DLSU.png', 'News5.png', 'Spot.png', 'TheWorldNews.png']
+    row_2_links = [
+        'https://web.facebook.com/127612997282544/posts/4203833589660444/?d=n&_rdc=1&_rdr',
+        'https://web.facebook.com/163550757135020/posts/2559727597517312/?d=n&_rdc=1&_rdr',
+        'https://www.spot.ph/newsfeatures/the-latest-news-features/86315/plastic-bottle-boat-made-in-ilocos-sur-a833-20210527',
+        'https://theworldnews.net/ph-news/this-plastic-bottle-boat-can-take-four-people-out-to-the-sea'
+    ]
+    col1, col2, col3, col4, col5 = st.columns(5)
+    for ind, col in enumerate([col1, col2, col3, col4, col5]):
+        with col:
+            st.markdown(f"""<a href="{row_1_links[ind]}">
+                <img src="{get_image(f'Landing Page_Feature {row_1[ind]}')}" 
+                width="100%" height="100%"></a>""", unsafe_allow_html=True)
+    add_vertical_space(2)
+
+    col1, col2, col3, col4 = st.columns(4)
+    for ind,col in enumerate([col1, col2, col3, col4]):
+        with col:
+            st.markdown(f"""<a href="{row_2_links[ind]}">
+                <img src="{get_image(f'Landing Page_Feature {row_2[ind]}')}" 
+                width="90%" height="90%"></a>""", unsafe_allow_html=True)
+    add_vertical_space(2)
+
 add_vertical_space(2)
 
 
@@ -100,33 +134,47 @@ with col2:
 
 add_vertical_space(2)
 
-
-# Donate
+# Apply
+st.caption('APPLY TODAY')
 col1, col2 = st.columns(2)
 with col1:
-
-    # possibly photo?
-
-    st.caption('DONATE')
-    donate = st.button('Donate now', type='primary', on_click=donate_button)
-    if 'donate' not in ss:
-        ss.donate = False
-    if ss.donate:
-        with st.container(border=True):
-            st.write('test')
-
-            # donate details
-
+    st.write(section_text['apply'])
+    apply = st.button('Apply now')
+    if apply:
+        switch_page('application')
 with col2:
-    st.caption('APPLY')
-
-    # possibly photo
-
-    apply = st.button('Apply now', type='primary')
-
+    st.image(get_image('About Us_Awards - ASEAN Youth Eco-Champions.jpg'))
 add_vertical_space(2)
 
 
+# Donate
+st.caption('DONATE TODAY')
+st.write(section_text['donate_description'])
+donate = st.button('Donate now', type='primary', on_click=donate_button)
+if 'donate' not in ss:
+    ss.donate = False
+if ss.donate:
+    def donate():
+        with st.container(border=True):
+            col1, col2= st.columns([0.4,0.6], gap='medium')
+            with col1:
+                option = st.radio('Choose your donation method', donation_methods.keys())
+                done_donate = st.button('Done donating')
+            with col2:
+                add_vertical_space(2)
+                st.image(get_image(f'Landing Page_Donation {option}{donation_methods[option][2]}'), width=100)
+                st.subheader(donation_methods[option][0])
+                st.write(donation_methods[option][1])
+            if done_donate:
+                st.balloons()
+                st.write(section_text['donate_done'])
+                st.text_input('Your name')
+
+    donate()
+
+add_vertical_space(2)
+        
+
 # Sponsors and partners
 st.caption('OUR SPONSORS')
-# st.image()
+st.image(get_image('Landing Page_Partners and Sponsors.png'))

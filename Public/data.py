@@ -35,7 +35,11 @@ text = {
                 "Leadership Roles": "Take on leadership positions in committees, developing and showcasing your leadership skills in areas such as engineering, creative projects, and more.",
                 "Exclusive Events": "Attend exclusive events, webinars, and gatherings, gaining access to unique learning experiences and networking opportunities within the environmental conservation sector."
             }
-        }
+        },
+
+        'apply' : 'Lorem ipsum dolor sit amet',
+        'donate_description' : 'Lorem ipsum dolor sit amet',
+        'donate_done' : 'Lorem ipsum dolor sit amet',
 
 
     }
@@ -50,10 +54,13 @@ landing_page_impact = [
     ('Filipinos reached in speaking engagements', 13500)
 ]
 
-images = {
-    'Landing Page' : {
-        'background_image' : 'https://scontent.xx.fbcdn.net/v/t1.15752-9/413257242_374704405145752_9130619688692993285_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=510075&_nc_eui2=AeHhYk5S5qfic3QDnLJwQCwJ07PmekSGYubTs-Z6RIZi5tnQ2ZbnqbO2ZEz7qgc0qXdaObesivYkjER87xKSZk7y&_nc_ohc=luzXxQUCCv4AX9UrTYN&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&cb_e2o_trans=q&oh=03_AdSxSGtijtGFER6HHkFmvYGX1oldPHUVLjtX-0mJzvMW-A&oe=65C1BF02'
-
-    }
-
+donation_methods = {
+    'BDO' : ('012620009274', 'Adem Marione C. Inovejas', '.png'),
+    'UnionBank' : ('1094 8544 9981', 'Adem Marione C. Inovejas', '.png'),
+    'PayMaya' : ('09275584432', 'Adem I.', '.webp'),
+    'GCash' : ('09275584432', 'Adem I.', '.png')
 }
+
+def get_image(filename):
+    s = filename.replace(' ', '%20')
+    return f'https://github.com/malenariz/IEdeathon24_Images/blob/main/{s}?raw=true'
