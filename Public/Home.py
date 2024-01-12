@@ -134,6 +134,7 @@ with col2:
 
 add_vertical_space(2)
 
+
 # Apply
 st.caption('APPLY TODAY')
 col1, col2 = st.columns(2)
@@ -149,7 +150,7 @@ add_vertical_space(2)
 
 # Donate
 st.caption('DONATE TODAY')
-st.write(section_text['donate_description'])
+st.write(text['donate_description'])
 donate = st.button('Donate now', type='primary', on_click=donate_button)
 if 'donate' not in ss:
     ss.donate = False
@@ -167,7 +168,7 @@ if ss.donate:
                 st.write(donation_methods[option][1])
             if done_donate:
                 st.balloons()
-                st.write(section_text['donate_done'])
+                st.write(text['donate_done'])
                 st.text_input('Your name')
 
     donate()
