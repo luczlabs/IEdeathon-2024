@@ -32,22 +32,58 @@ st.markdown(f"""
 add_vertical_space(2)
 
 
-col1, col2 = st.columns(2)
-### alternatively, we can also do tabs bc the forms will get squished (also, maybe put a banner for each tab if ever)
+tab1, tab2 = st.tabs(['Project Blue Member', 'Project Blue Ambassador'])
 # Project Blue Member
-with col1:
+with tab1:
     st.subheader(section_text['member']['title'])
-    st.write(section_text['member']['description'])
+    st.write(f"*{section_text['member']['description']}*")
+    
+    add_vertical_space(1)
+
+    member_steps = section_text['member']['steps'].split('\n')
+    st.write(f'**{member_steps[0]}**')
+    
+    html_str = """
+                <!DOCTYPE html> 
+        <html> 
+        <body> 
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXZhCYRvAk-rUY6GHKd-EpRKiRh3HwcD88v7BarVTQuRCSiw/viewform?embedded=true" width="640" height="382" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </body> 
+        </html> 
+        """
+    st.markdown(html_str, unsafe_allow_html=True)
     st.divider()
-    st.write(section_text['member']['steps'])
+
+    for i in range(1,len(member_steps)):
+        st.write(f'{member_steps[i]}')
+
+
 
 
 # Project Blue Ambassador
-with col2:
+with tab2:
     st.subheader(section_text['ambassador']['title'])
-    st.write(section_text['ambassador']['description'])
+    st.write(f"*{section_text['ambassador']['description']}*")
+
+    add_vertical_space(1)
+
+    ambassador_steps = section_text['ambassador']['steps'].split('\n')
+    st.write(f'**{ambassador_steps[0]}**')
+    
+    html_str = """
+                <!DOCTYPE html> 
+        <html> 
+        <body> 
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvjcuSym_svJmteg2YJwXT5ZEqCc-BlNM4wPKSk590zf2kyQ/viewform?embedded=true" width="640" height="382" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </body> 
+        </html> 
+        """
+    st.markdown(html_str, unsafe_allow_html=True)
     st.divider()
-    st.write(section_text['ambassador']['steps'])
+
+    for i in range(1,len(ambassador_steps)):
+        st.write(f'{ambassador_steps[i]}')
+
 
 # Donate
 st.divider()

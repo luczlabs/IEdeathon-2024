@@ -49,22 +49,18 @@ text = {
         'member' : {
             'title' : 'Become a Project Blue Member, and contribute to working towards a cleaner future for our oceans!',
             'description' : 'Joining Project Blue means becoming an integral part of a community driven by a shared dedication to making a positive change. As a member, you will have the opportunity to engage in diverse projects, both on the ground and online—making a real impact on ocean pollution and marine conservation. 🌊',
-            'steps' : """
-                1. Answer the provided Google Form with the necessary information.
-                [Embed GForm] 
-                2. Wait for an email confirmation which will provide details about the status of your application and further instructions.
-                3.Consider donating funds to support the initiatives of the organization.
+            'steps' : """1. Answer the provided Google Form with the necessary information.
+            2. Wait for an email confirmation which will provide details about the status of your application and further instructions.
+            3.Consider donating funds to support the initiatives of the organization.
             """
         },
         
         'ambassador' : {
             'title' : 'Become a Project Blue Ambassador, and use your social media influence for a meaningful cause! ',
             'description' : 'As a social media user, you have the opportunity to take your commitment to the next level by becoming a Project Blue Ambassador. Harness the influence of your online presence by sharing and interacting with PBI’s publication materials—cultivating a collective sense of responsibility for our ocean. 🌊',
-            'steps' :  """
-                1. Answer the provided Google Form with the necessary information.
-                [Embed GForm]
-                2. Wait for an email confirmation which will provide details about the status of your application and further instructions.
-                3. Consider donating funds to support the initiatives of the organization.
+            'steps' :  """1. Answer the provided Google Form with the necessary information.
+            2. Wait for an email confirmation which will provide details about the status of your application and further instructions.
+            3. Consider donating funds to support the initiatives of the organization.
             """
         }
     }
