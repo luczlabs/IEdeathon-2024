@@ -37,7 +37,7 @@ text = {
                 "Public Recognition": "Enjoy public recognition for your contributions through social media shout-outs, newsletters, and acknowledgment at Project Blue events."
             },
             "🤝 Exclusive Opportunities": {
-                "Leadership Roles": "Take on leadership positions in committees, developing and showcasing your leadership skills in areas such as engineering, creative projects, and more.",
+                "Leadership Roles": "Take on leadership Position in committees, developing and showcasing your leadership skills in areas such as engineering, creative projects, and more.",
                 "Exclusive Events": "Attend exclusive events, webinars, and gatherings, gaining access to unique learning experiences and networking opportunities within the environmental conservation sector."
             }
         },
@@ -71,6 +71,14 @@ text = {
 
     'Organizational Structure Page' : {
 
+    },
+
+    'About Us Page' : {
+
+    },
+
+    'Upcoming Events Page' : {
+
     }
 }
 
@@ -101,8 +109,8 @@ organization_structure = {
     },
     "External-Public Relations": {
         "Committee Description": "Crafting Connections, Sharing Stories",
-        "Committe Invitation": "Dive into the world of External PR where relationships flourish and stories come to life. Join our team to create meaningful connections with sponsors, media, and the community. Be the voice that amplifies our mission, turning every story into an opportunity to inspire change.",
-        "Position/s Description": {
+        "Committee Invitation": "Dive into the world of External PR where relationships flourish and stories come to life. Join our team to create meaningful connections with sponsors, media, and the community. Be the voice that amplifies our mission, turning every story into an opportunity to inspire change.",
+        "Position Description": {
             "Advisor": "The Engineering Team Advisor provides guidance and expertise to ensure the successful execution of engineering-related projects within Project Blue. They leverage their knowledge to oversee the team's initiatives, fostering innovation and sustainability in environmental solutions.",
             "Head": "The Head of Externals-Public Relations leads the team in developing and implementing external communication strategies. They are responsible for building and maintaining relationships with external partners, sponsors, and the media.",
         },
@@ -110,16 +118,16 @@ organization_structure = {
     },
     "External-SocMed": {
         "Committee Description": "Spark Change, One Post at a Time",
-        "Committe Invitation": "Are you a social media maven? Join Externals-SocMed and be the driving force behind our online presence. From crafting compelling content to fostering a vibrant online community, your skills can turn likes into love for the environment. Join us in spreading the message of sustainability across social platforms.",
-        "Position/s Description": {
+        "Committee Invitation": "Are you a social media maven? Join Externals-SocMed and be the driving force behind our online presence. From crafting compelling content to fostering a vibrant online community, your skills can turn likes into love for the environment. Join us in spreading the message of sustainability across social platforms.",
+        "Position Description": {
             "Members": "The Externals-SocMed team manages Project Blue's social media presence. They create engaging content, foster online community engagement, and promote the organization's mission through various social media platforms.",
         },
         "Testimonial": "JUSTINE ISABELLE REVILLA\nDIRECTOR FOR PUBLICITY & PROMOTIONS\n\nI have been part of the Project Blue family for quite a while now, and I'm still grateful that I am able to utilize my skills and interests for the organization. My favorite memory with Project Blue was when we were given the chance to witness the beauty of Masungi Georeserve's Discovery Trail because I met some members for the first time in person and was able to experience the trail with them. Not only did this organization help strengthen my skills regarding social media, but it also made me enjoy learning about the ecosystem, marine lives, and environment. It will always be an honor to serve Project Blue."
     },
     "Internals": {
         "Committee Description": "Behind the Scenes, Shaping the Future",
-        "Committe Invitation": "The Internals team is the heartbeat of Project Blue. From organizing seamless operations to conducting groundbreaking research, our internal committees are the backbone of our organization. Join us and be part of the team that keeps the engine running, ensuring our impact is both efficient and enduring.",
-        "Position/s Description": {
+        "Committee Invitation": "The Internals team is the heartbeat of Project Blue. From organizing seamless operations to conducting groundbreaking research, our internal committees are the backbone of our organization. Join us and be part of the team that keeps the engine running, ensuring our impact is both efficient and enduring.",
+        "Position Description": {
             "Head": "The Head of Internals oversees the internal operations of Project Blue, ensuring effective collaboration among committees. They play a pivotal role in maintaining a cohesive and productive organizational environment.",
             "Secretariat": "The Secretariat team manages administrative tasks, records minutes of meetings, and facilitates communication within the organization. They play a crucial role in ensuring smooth internal processes.",
             "Research": "The Research team conducts studies and gathers data related to environmental conservation. They contribute valuable insights to inform Project Blue's initiatives and decision-making processes.",
@@ -129,28 +137,35 @@ organization_structure = {
     },
     "Creatives": {
         "Committee Description": "Unleash Your Creative Wave",
-        "Committe Invitation": "Calling all artists, designers, and storytellers! Join the Creatives team and use your skills to visually narrate our journey. From stunning graphics to captivating content, be part of the team that brings our mission to life. Your creativity is the brushstroke that paints a brighter, sustainable future.",
-        "Position/s Description": {
+        "Committee Invitation": "Calling all artists, designers, and storytellers! Join the Creatives team and use your skills to visually narrate our journey. From stunning graphics to captivating content, be part of the team that brings our mission to life. Your creativity is the brushstroke that paints a brighter, sustainable future.",
+        "Position Description": {
             "Head": "The Head of Creatives leads the creative team in developing visual content that effectively communicates Project Blue's mission. They oversee graphic design, branding, and content creation to support the organization's initiatives.",
         },
         "Testimonial": "ANGELO VILLAMAR\nASSOCIATE DIRECTOR FOR CREATIVES\n\nFor the longest time, I have been in the pursuit of finding the fulfillment for being an artist and fortunately, I found it here at Project Blue PH because I know that in every pub mat and revision that I do, it's for a good cause, the environment. The people that I work with are also very professional and systematic because they all know that topics regarding the environment should be taken seriously."
     },
     "Finance": {
         "Committee Description": "Navigating Finances, Steering Sustainability",
-        "Committe Invitation": "Join the Finance team and be the financial steward of our mission. Your knack for numbers will help us budget, plan, and sustain our initiatives. Be part of the team that ensures every penny contributes to a greener, cleaner tomorrow.",
-        "Position/s Description": {
+        "Committee Invitation": "Join the Finance team and be the financial steward of our mission. Your knack for numbers will help us budget, plan, and sustain our initiatives. Be part of the team that ensures every penny contributes to a greener, cleaner tomorrow.",
+        "Position Description": {
             "Treasurer": "The Treasurer manages the financial aspects of Project Blue, including budgeting, financial planning, and expenditure tracking. They play a key role in ensuring fiscal responsibility and transparency within the organization.",
         },
         "Testimonial": "Lorem ipsum"
     },
     "The Boat Team (Pacis Boys)": {
         "Committee Description": "Sailing Towards Conservation",
-        "Committe Invitation": "Dive into marine conservation with the Pacis Boys! From floating fish cages to marine safety initiatives, our team ensures the health of our oceans. Join us and be part of the crew shaping the future of sustainable fisheries and safeguarding our marine ecosystems. Set sail with a purpose!",
+        "Committee Invitation": "Dive into marine conservation with the Pacis Boys! From floating fish cages to marine safety initiatives, our team ensures the health of our oceans. Join us and be part of the crew shaping the future of sustainable fisheries and safeguarding our marine ecosystems. Set sail with a purpose!",
 
-        "Position/s Description": {
+        "Position Description": {
             "Members": "The Boat Team is responsible for projects related to floating fish cages and marine safety. They collaborate with the Engineering Team, Marine Biologist, and other relevant committees to implement and oversee initiatives that contribute to marine conservation and safety.",
         },
         "Testimonial": "Lorem ipsum"
+    }
+}
+
+upcoming_events = {
+    'Bottle Collection Drive across Metro Manila and Ilocos Region' : {
+        'description' : """Project Blue, through its partnership with schools, businesses, barangays, and other public spaces across Metro Manila and Ilocos Region, will collect plastic bottles. Through this effort, the organization aims to address environmental challenges and create positive change. These collected plastic bottles will undergo a transformative process, where they will be repurposed into innovative solutions such as Ahon Life-Savers, SustainaBoats, and AquaCages.""",
+        'date' : 'January 27, 2024'
     }
 }
 

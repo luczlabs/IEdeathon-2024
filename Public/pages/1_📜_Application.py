@@ -58,8 +58,6 @@ with tab1:
         st.write(f'{member_steps[i]}')
 
 
-
-
 # Project Blue Ambassador
 with tab2:
     st.subheader(section_text['ambassador']['title'])
