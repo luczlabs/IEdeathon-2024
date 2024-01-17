@@ -37,5 +37,6 @@ for event, data in upcoming_events.items():
         st.caption(data['date'])
         st.subheader(event)
         st.write(data['description'])
+        st.button(f'{time_difference.days} days left!', type='primary')
         
 

@@ -74,12 +74,24 @@ text = {
     },
 
     'About Us Page' : {
-
+        'Mission' : """To preserve the beaches of the Philippines by designing sustainable solutions and providing educational campaigns to raise awareness and knowledge on ocean pollution and marine conservation.""",
+        'Vision' : """To inspire others to take action and have a community that appreciates, respects, and is aware of the environment's problems.""",
+        'Partners and Sponsors' : """Project Blue cultivates extensive collaborations with governmental bodies, public communities, and private organizations—highlighting our commitment to collective action and shared responsibility in addressing environmental challenges. Driven by a shared advocacy, these collaborations encompass diverse projects, such as bottle collections, donation of innovative solutions, cleanup drives, educational talks, and more; this amplifies our impact and reinforces our dedication to fostering positive environmental change across various domains.""",
+        'Founder' : 'Adem Inovejas',
+        'Founder Photo' : 'About Us_Founder.jpg',
+        'Founding Date' : 'December 2020; formerly Project Blue Ilocos',
+        'History' : """Adem Inovejas, a second-year BS Mechanical Engineering student at DLSU - Manila, hails from the towns of Sinait and San Esteban, Ilocos Sur. Despite his roots, he spent his formative years in Manila, where his family chose to reside during the COVID-19 lockdown for safetaisy reasons. Since March of 2020, Adem and his family have not returned to Manila. An aficionado of beach environments and water activities such as surfing and diving, Adem has observed a disconcerting prevalence of trash along the shores, even in lesser-known beach locations. The genesis of our organization traces back to Adem's birthday, when what began as a simple cleanup idea evolved into a formalized entity. Recognizing the inadequacy of cleanups alone and the imperative for sustainable initiatives, Adem embarked on a comprehensive approach. The inaugural project centered around his favorite beach, where a cleanup ensued, complemented by the donation of three trash bins and a post-cleanup discussion on sustainability with barangay officials. Adem's initiative gained momentum as he shared his birthday plan on Instagram, garnering substantial support for the cause. The organization's inception marks a pivotal step towards addressing the persistent issue of beach pollution and advancing sustainable practices.""",
     },
 
     'Upcoming Events Page' : {
 
     }
+}
+
+contact = {
+    'Facebook': 'facebook.com/projectblueph',
+    'Instagram': '@projectblueph',
+    'Email': 'projectblueilocos@gmail.com'
 }
 
 landing_page_impact = [
@@ -166,6 +178,29 @@ upcoming_events = {
     'Bottle Collection Drive across Metro Manila and Ilocos Region' : {
         'description' : """Project Blue, through its partnership with schools, businesses, barangays, and other public spaces across Metro Manila and Ilocos Region, will collect plastic bottles. Through this effort, the organization aims to address environmental challenges and create positive change. These collected plastic bottles will undergo a transformative process, where they will be repurposed into innovative solutions such as Ahon Life-Savers, SustainaBoats, and AquaCages.""",
         'date' : 'January 27, 2024'
+    }
+}
+
+awards = {
+    'ONE Ilocos Sur Spring Development Grant (SDG)' : {
+        'Picture' : f'About Us_Awards - ONE Ilocos Sur SDG.jpg',
+        'Description' : """JANUARY 19, 2023 | Project Blue is honored to announce its selection as one of the five qualified youth organizations for the ONE Ilocos Sur Spring Development Grant (SDG). We extend our sincere thanks to Dr. Aser Javier, Ms. Ellen Marie Jalandoni, and Mr. Marlon Tagorda for their invaluable guidance throughout this process. Furthermore, our gratitude extends to the Provincial Government of Ilocos Sur for providing us with the opportunity to make a positive impact in our community. This award underscores our dedication to sustainable development and fuels our commitment to ongoing efforts for a better future."""
+    },
+    'Ten Accomplished Youth Organizations (TAYO) Awards' : {
+        'Picture' : 'About Us_Awards - TAYO Awards.jpg',
+        'Description' : """APRIL 26, 2023 | Project Blue proudly recounts its journey through the esteemed TAYO Awards, a testament to our commitment to environmental conservation. In October 2022, Adem, Cath, and Basti meticulously presented compelling nominations for TAYO, securing a spot among 65 distinguished organizations out of 491 youth-led initiatives during the initial phase. Following a December interview that showcased the authenticity and impact of our work, Project Blue advanced to the Expert Screening Qualifying Stage in January 2023, joining 40 outstanding organizations. Despite not making the top 20, our journey continued with an invitation to the National Finalist Awarding by the Executive Director of TAYO. This experience, while an overwhelming one, has provided invaluable insights for growth and improvement. As Project Blue remains steadfast in its mission, the organization expresses gratitude for the lessons learned and connections forged during the TAYO journey, paving the way for a promising future in ocean conservation."""
+    },
+    'Water Leadership Award by Maynilad Water Services Inc.' : {
+        'Picture' : 'About Us_Awards - Water Leadership by Maynilad.jpg',
+        'Description' : """MAY 6, 2023 | Mr.  Adem Inovejas has been honored with the Water Leadership Award at the World Water Day Philippines Awards 2023. Presented by Maynilad Water Services, Inc., in collaboration with the National Water Resources Board (NWRB) and the Department of Environment and Natural Resources (DENR), these awards commend individuals committed to water and environmental conservation. Adem's dedication to creating innovative boats from recycled and sustainable materials has earned both him and Project Blue this prestigious accolade. This recognition underscores their unwavering commitment to preserving vital waters and marine ecosystems, motivating them to persist in their mission."""
+    },
+    'ASEAN Youth Eco-Champions Award' : {
+        'Picture' : 'About Us_Awards - ASEAN Youth Eco-Champions.jpg',
+        'Description' : """AUGUST 23, 2023 | Our founder received the prestigious ASEAN Youth Eco-Champions Award during the 17th ASEAN Ministerial Meeting on the Environment held in Vientiane, Lao PDR. Recognized as the Environmental Management Bureau (EMB) Youth Envi Icon 2022, Mr. Inovejas, showcased Project Blue's initiatives on ocean pollution and marine conservation to ASEAN leaders. The spotlight was on the innovative "Plastic Bottle Boat Project," where discarded PET bottles were repurposed into a functional boat, reducing ocean plastics and providing an alternative for local fishermen. This project, for which Mr. Inovejas was previously acknowledged by the EMB Central Office, aligns with his commitment to environmental management and protection. The Plastic Bottle Boat Project aims to inspire coastal communities, illustrating that waste materials can be transformed into valuable resources."""
+    },
+    '2023 Galing Pook Citizenship Awards' : {
+        'Picture' : 'About Us_Awards - Galing Pook Citizenship.jpg',
+        'Description' : """OCTOBER 12, 2023 | Project Blue proudly stands as one of the 10 finalists for the 2023 Galing Pook Citizenship Awards. Based in Ilocos Sur, this youth-led nonprofit engages in impactful initiatives, including cleanups, marine biodiversity volunteerism, and educational campaigns both online and offline. Noteworthy sustainable solutions, such as 'Sustainable-boats' and eco-life vests made from repurposed plastic bottles, have directly impacted over 25,000 Filipinos and reached more than 350,000 people on social media. With a membership exceeding 200 youth volunteers from the Philippines and the ASEAN region, Project Blue remains committed to making a positive impact. The awarding ceremony, held at One Esplanade in Pasay City, marked a significant moment alongside this year's 10 Outstanding Local Governance. """
     }
 }
 
