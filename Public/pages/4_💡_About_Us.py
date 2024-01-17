@@ -19,7 +19,7 @@ add_vertical_space(1)
 st.markdown(f"""
     <div style="line-height:450%;">
         <span style=" font-size:75px ; color:#31333F ; font-weight:bold; ">About </span>
-        <span style=" font-size:75px ; color:{main_color} ; font-weight:bold; ">us</span>
+        <span style=" font-size:75px ; color:{main_color} ; font-weight:bold; ">Us</span>
     </div>""",
     unsafe_allow_html=True
 )
