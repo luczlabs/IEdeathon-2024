@@ -4,8 +4,7 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 
 
 # Imported
-from data import colors, get_image
-from data_to_merge import text
+from data import text, colors, get_image
 
 
 # Variables

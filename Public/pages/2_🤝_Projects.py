@@ -28,8 +28,9 @@ add_vertical_space(2)
 
 
 # Google Sheets Connection
+url = st.secrets['spreadsheet']
 conn = st.connection("gsheets", type=GSheetsConnection)
-df = conn.read()
+df = conn.read(spreadsheet=url)
 
 
 # Find min,max

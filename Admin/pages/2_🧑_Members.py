@@ -25,8 +25,9 @@ st.markdown(f"""
 add_vertical_space(2)
 
 # CONTENT
-st.write(section_text)
-tiers = pd.read_csv('tiers-Sheet1.csv',)
+st.write(section_text['Message'])
+tiers = pd.read_csv('tiers - Sheet1.csv',)
+
 with st.container(border=True):
     st.subheader('Tiers')
 
