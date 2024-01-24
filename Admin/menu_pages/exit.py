@@ -11,6 +11,7 @@ from data import colors, get_image, text
 ss = st.session_state
 main_color = colors['main']
 section_text = text['Exit Process Page']
+member_info = st.session_state.member_info[0]
 
 
 # Title
@@ -27,8 +28,7 @@ add_vertical_space(2)
 
 
 # Content
-name = 'Val Allen'
-st.subheader(f'Hello {name},')
+st.subheader(f"Hello {member_info['First Name']},")
 st.write(section_text['Intro'])
 
 for step, data in section_text['Steps'].items():
