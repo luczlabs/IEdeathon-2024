@@ -14,6 +14,10 @@ ss = st.session_state
 main_color = colors['main']
 
 
+# Initialize
+st.set_page_config(page_title='Project Blue Admin', page_icon='🌊', layout="centered", initial_sidebar_state="auto", menu_items=None)
+
+
 # Google Sheets Connection
 member_database = st.secrets['member_database']
 conn = st.connection("gsheets", type=GSheetsConnection)
