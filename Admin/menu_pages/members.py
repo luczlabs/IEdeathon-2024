@@ -82,7 +82,7 @@ if tier:
     with col_2:
         st.subheader("**Share this to your friends!**")
         if result == "Explorer Starfish":
-            image_path = r"Admin\tiers\Member Status_Shareable T1.png"
+            image_path = r"tier_images/Member Status_Shareable T1.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
@@ -90,7 +90,7 @@ if tier:
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T1.png")
         if result == "Steward Jellyfish":
-            image_path = r"Admin\tiers\Member Status_Shareable T2.png"
+            image_path = r"tier_images/Member Status_Shareable T2.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
@@ -98,7 +98,7 @@ if tier:
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T2.png")
         if result == "Guardian Crab":
-            image_path = r"Admin\tiers\Member Status_Shareable T3.png"
+            image_path = r"tier_images/Member Status_Shareable T3.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
@@ -106,7 +106,7 @@ if tier:
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T3.png")
         if result == "Defender Dolphin":
-            image_path = r"Admin\tiers\Member Status_Shareable T4.png"
+            image_path = r"tier_images/Member Status_Shareable T4.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
@@ -114,7 +114,7 @@ if tier:
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T4.png")
         if result == "Sentinel Whale":
-            image_path = r"Admin\tiers\Member Status_Shareable T5.png"
+            image_path = r"tier_images/Member Status_Shareable T5.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
