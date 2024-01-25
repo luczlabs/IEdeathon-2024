@@ -85,7 +85,7 @@ if tier:
             image_path = r"Admin/tier_images/Member Status_Shareable T1.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
-            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            myFont = ImageFont.truetype('Admin/Poppins-Bold.ttf', 65)
             I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(143, 55, 51))
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T1.png")
@@ -93,7 +93,7 @@ if tier:
             image_path = r"Admin/tier_images/Member Status_Shareable T2.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
-            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            myFont = ImageFont.truetype('Admin/Poppins-Bold.ttf', 65)
             I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(223, 178, 95))
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T2.png")
@@ -101,7 +101,7 @@ if tier:
             image_path = r"Admin/tier_images/Member Status_Shareable T3.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
-            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            myFont = ImageFont.truetype('Admin/Poppins-Bold.ttf', 65)
             I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(195, 81, 107))
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T3.png")
@@ -109,7 +109,7 @@ if tier:
             image_path = r"Admin/tier_images/Member Status_Shareable T4.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
-            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            myFont = ImageFont.truetype('Admin/Poppins-Bold.ttf', 65)
             I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(139, 167, 73))
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T4.png")
@@ -117,7 +117,7 @@ if tier:
             image_path = r"Admin/tier_images/Member Status_Shareable T5.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
-            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            myFont = ImageFont.truetype('Admin/Poppins-Bold.ttf', 65)
             I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(77, 137, 146))
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T5.png")
