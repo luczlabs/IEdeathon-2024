@@ -30,7 +30,7 @@ add_vertical_space(2)
 
 # CONTENT
 st.write(section_text['Message'])
-tiers = pd.read_csv('tiers - Sheet1.csv',)
+tiers = pd.read_csv('Admin/tiers - Sheet1.csv',)
 
 with st.container(border=True):
     st.subheader('Tiers')
@@ -76,7 +76,7 @@ if tier:
     with col_2:
         st.subheader("**Share this to your friends!**")
         if result == "Explorer Starfish":
-            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T1.png.png"
+            image_path = r"Admin\tiers\Member Status_Shareable T1.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
@@ -84,7 +84,7 @@ if tier:
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T1.png")
         if result == "Steward Jellyfish":
-            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T2.png.png"
+            image_path = r"Admin\tiers\Member Status_Shareable T2.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
@@ -92,7 +92,7 @@ if tier:
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T2.png")
         if result == "Guardian Crab":
-            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T3.png.png"
+            image_path = r"Admin\tiers\Member Status_Shareable T3.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
@@ -100,7 +100,7 @@ if tier:
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T3.png")
         if result == "Defender Dolphin":
-            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T4.png.png"
+            image_path = r"Admin\tiers\Member Status_Shareable T4.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
@@ -108,7 +108,7 @@ if tier:
             st.image(image, caption = "Member Status", use_column_width = True)
             image.save("Member Status_Shareable T4.png")
         if result == "Sentinel Whale":
-            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T5.png.png"
+            image_path = r"Admin\tiers\Member Status_Shareable T5.png"
             image = Image.open(image_path)
             I1 = ImageDraw.Draw(image)
             myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
