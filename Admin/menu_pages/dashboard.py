@@ -45,44 +45,39 @@ st.markdown(f"""
     unsafe_allow_html=True
 )
 add_vertical_space(2)
-
+st.caption('MEMBERS OVERVIEW')
 # Member Details
 col_1, col_2 = st.columns([1.1,2])
+
 
 #Growth Rate and Title
 with col_1:
     #with st.container(border=True):
-    st.markdown(f'<p style="margin-left: 20px; margin-top:5px; margin-bottom:10px; font-size:52px;"><strong>Members</p>', unsafe_allow_html=True)
-    st.markdown(f'<p style="margin-left:20px; margin-top:-35px; font-size:40px; color:{main_color};"><strong>Overview 👥</p>', unsafe_allow_html=True)
-
+    #st.markdown(f'<p style="margin-left: 20px; margin-top:5px; margin-bottom:10px; font-size:52px;"><strong>Members</p>', unsafe_allow_html=True)
+    #st.markdown(f'<p style="margin-left:20px; margin-top:-35px; font-size:40px; color:{main_color};"><strong>Overview 👥</p>', unsafe_allow_html=True)
+    with st.container(border=True, height =150): 
+        growth_num = ((df_24.shape[0]-df_23.shape[0])/df_23.shape[0]*100)
+        st.markdown(f'<p style="margin-bottom: -50px; color:{main_color}; font-size:20px; "><strong>  Membership Growth</p>', unsafe_allow_html=True)
+        st.title(f"{math.ceil(growth_num)}%")
+        if growth_num > 0:
+            st.markdown(f'<p style="margin-top:-20px; color: #2E8B57; font-size:14px;">↑ increase from 2023</p>', unsafe_allow_html=True)
 
 
 with col_2:
-    with st.container(border=True): 
-        col_1_1, col_2_2 = st.columns([1.5,1])
-        with col_1_1:
-            growth_num = ((df_24.shape[0]-df_23.shape[0])/df_23.shape[0]*100)
-            st.markdown(f'<p style="margin-bottom: -50px; color:{main_color}; font-size:20px; "><strong>  Membership Growth Rate</p>', unsafe_allow_html=True)
-            st.title(f"{math.ceil(growth_num)}%")
-            if growth_num > 0:
-                st.markdown(f'<p style="margin-top:-20px; color: #2E8B57; font-size:14px;">↑ increase from 2023</p>', unsafe_allow_html=True)
-       
-        with col_2_2:
-            html_string = df_members.style \
-                .hide_index() \
-                .hide_columns() \
-                .set_table_styles([{'selector': 'td, th', 'props': [('font-size', '13px'), ('text-align', 'center'), ('border', '1px solid #dddddd')]}]) \
-                .set_properties(**{'background-color': '#f2f2f2'}, subset=pd.IndexSlice[:, ['Year']]) \
-                .render()
-            st.markdown(f'<p style=margin-top:-12px;">{html_string}</p>', unsafe_allow_html=True)
-
+    with st.container(border=True, height =150):
+        df_members = df_members.sort_values(by="No. of Members")
+        fig_mem = px.line(df_members, x="Year", y="No. of Members")
+        fig_mem.update_layout(width=375, height=170)
+        fig_mem.update_layout(margin=dict(t=15))
+        fig_mem.update_layout(xaxis=dict(tickmode='array', tickvals=[2022, 2023, 2024], title=''))
+        st.write(fig_mem)
 #Location and Age
 
 col_3, col_4 = st.columns([1,1])
 
 #Location
 with col_3:
-    with st.container(border=True):
+    with st.container(border=True, height=465):
         df_24['Count'] = 1 
         df_24_grouped = df_24.groupby(['Region', 'City']).agg({'Count': 'sum'}).reset_index()
         custom_colors = ['#0A2647','#144272','#164D76','#205295','#2C74B3','#0077B6']
@@ -90,13 +85,13 @@ with col_3:
         fig_loc.update_layout(width=375, height=375)
         fig_loc.update_layout(margin=dict(t=15))
         st.markdown(f'<p style="margin-bottom: -20px; color:{main_color}; font-size:20px; text-align:center;"><strong>Geographical Distribution</p>', unsafe_allow_html=True)
-        st.markdown(f'<p style="margin-top:3px; margin-bottom:-20px; color: #000000; font-size:13px; text-align:center;"><em>This chart displays the geographic distribution of our members across different regions and cities.</em></p>', unsafe_allow_html=True)
+        st.markdown(f'<p style="margin-top:3px; margin-bottom:-40px; color: #000000; font-size:13px; text-align:center;"><em>This chart displays the geographic distribution of our members across different regions and cities.</em></p>', unsafe_allow_html=True)
         st.plotly_chart(fig_loc, use_container_width=True)
-        st.markdown(f'<p style="margin-top:-90px; margin-bottom:-50px; color: #000000; font-size:15px; text-align:center;">Explore the data by clicking on <br>specific regions within the chart.</p>', unsafe_allow_html=True)
-        st.write(df_24_grouped)
+        st.markdown(f'<p style="margin-top:-80px; margin-bottom:-30px; color: #000000; font-size:15px; text-align:center;">Explore the data by clicking on <br>specific regions within the chart.</p>', unsafe_allow_html=True)
+    
 #Age
 with col_4:
-    with st.container(border=True):
+    with st.container(border=True, height=465):
         df_24['Count'] = 1 
         df_24_grouped = df_24.groupby(['Age']).agg({'Count': 'sum'}).reset_index()
         fig_age = px.pie(df_24_grouped, values='Count', names='Age', color_discrete_sequence=custom_colors)
@@ -115,11 +110,12 @@ with col_4:
         st.markdown(f'<p style="margin-top:3px; margin-bottom:-15px; color: #000000; font-size:13px; text-align:center;"><em>This chart displays the age distribution of our members.</em></p>', unsafe_allow_html=True)
         st.plotly_chart(fig_age, use_container_width=True)
 
-add_vertical_space(3)
+add_vertical_space(1)
 
 # Member Engagement
 #with st.container(border=True):
-st.markdown(f'<p style="margin-bottom:3px; margin-top:-12px; font-size:45px; text-align:center; color:{main_color}"><strong>Member Engagement</p>', unsafe_allow_html=True)
+st.caption("MEMBER ENGAGEMENT")
+#st.markdown(f'<p style="margin-bottom:3px; margin-top:-12px; font-size:45px; text-align:center; color:{main_color}"><strong>Member Engagement</p>', unsafe_allow_html=True)
 col_5, col_6 = st.columns([1,1])
 
 # Attendance
@@ -140,19 +136,42 @@ with col_6:
         st.markdown(f"<h1 style='text-align: center; margin-top:-15px; font-size:40px'>{df_24_involved} Involvements</h1>", unsafe_allow_html=True)
 
 # Committee Distribution
-with st.container(border=True):
+with st.container(border=True, height=421):
+    committee_mapping = {
+        'Finance': 6,
+        'The Pacis Boys': 6,
+        'Internals': 6,
+        'Creatives': 6,
+        'Engineering': 6,
+        'External-SocMed': 6
+    }
     df_24['Members'] = 1 
     df_24_grouped = df_24.groupby(['Committee']).agg({'Members': 'sum'}).reset_index()
     df_24_grouped = df_24_grouped.sort_values(by='Members', ascending=False)
-    fig_com = px.bar(df_24_grouped, x='Committee', y='Members')
-    fig_com.update_layout(width=375, height=375)
-    fig_com.update_layout(margin=dict(t=15))
+    df_24_grouped['Ideal'] = df_24_grouped['Committee'].map(committee_mapping)
+    df_melted = pd.melt(df_24_grouped, id_vars=['Committee'], value_vars=['Members', 'Ideal'],
+                    var_name='No. of Members', value_name='Number of Members')
+
+# Create a grouped bar graph comparing ideal and current number of members for each committee
+    fig_com = px.bar(df_melted, x='Committee', y='Number of Members', color='No. of Members',
+             labels={'Number of Members': 'Number of Members'},
+             barmode='group')
+    #fig_com = px.bar(df_24_grouped, x='Committee', y=['Members','Ideal'], barmode='group', position='dodge')
+    fig_com.update_layout(legend_title=dict(text='Legend Title'))  # Set legend title
+    fig_com.for_each_trace(lambda t: t.update(name='Current' if t.name == 'Members' else 'Ideal'))
+    fig_com.update_layout(
+        width=675,
+        height=375,
+        margin=dict(t=15),
+
+    )
     st.markdown(f'<p style="margin-bottom: -5px; color:{main_color}; font-size:20px; text-align:center;"><strong>Distribution of Members across Committees</p>', unsafe_allow_html=True)
     st.write(fig_com)
-    st.write('May space sa right kasi iniisip ko pwede siya lagyan if anong number of members for each committee ung ideal compared sa existing and iindiacte if naabot or hindi')
-add_vertical_space(3)
+    
+add_vertical_space(1)
 # Hours and Success Rating
-st.markdown(f'<p style="margin-bottom:3px; margin-top:-12px; font-size:45px; text-align:center; color:{main_color}"><strong>Community Outreach</p>', unsafe_allow_html=True)
+st.caption("COMMUNITY OUTREACH")
+#st.markdown(f'<p style="margin-bottom:3px; margin-top:-12px; font-size:45px; text-align:center; color:{main_color}"><strong>Community Outreach</p>', unsafe_allow_html=True)
 col_7, col_8 = st.columns([1,1])
 with col_7:
     with st.container(border=True):

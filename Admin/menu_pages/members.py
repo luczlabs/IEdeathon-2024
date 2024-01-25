@@ -59,27 +59,61 @@ def tiername(meetings, involved, led):
     return res
 
 tier = st.button('View Your Tier', type='primary')
+
+
 # Check if the button is clicked
+col_1, col_2=st.columns(2)
+
+
 if tier:
     # Call the function when the button is clicked
-    result = tiername(
-        member_info['Attendance Rating'],
-        member_info['No. of Projects Involved'],
-        member_info['No. of Projects Led']
-    )
-    st.write(f"""🌊 Project Blue Distinction Unlocked! 🌟 \n\n As a **{result}**, you're making waves in environmental conservation with Project Blue! 🌍✨\n\nYour Project Blue score sets you apart, propelling you to the next level of distinction.
-Show your commitment to a sustainable future by sharing this badge. 🎉 Let's inspire others to join the movement! 💙 \n\n #ProjectBlue \n #SustainabilityChampion \n\n Thank you for being a vital part of our ocean-saving community! 🐬🌊""")
-    st.divider()
-    st.subheader("**Share this to your friends!**")
-    if result == "Explorer Starfish":
-        st.image(get_image("Member Status_Shareable T1.png"))
-    if result == "Steward Jellyfish":
-        st.image(get_image("Member Status_Shareable T2.png"))
-    if result == "Guardian Crab":
-        st.image(get_image("Member Status_Shareable T3.png"))
-    if result == "Defender Dolphin":
-        st.image(get_image("Member Status_Shareable T4.png"))
-    if result == "Sentinel Whale":
-        st.image(get_image("Member Status_Shareable T5.png"))
+    result = tiername(30, 2, 0)
+    with col_1:
+        with st.container(border=True):
+            st.write(f"""🌊 **Project Blue Distinction Unlocked!** 🌟 \n\n As a **{result}**, you're making waves in environmental conservation with Project Blue! 🌍✨\n\nYour Project Blue score sets you apart, propelling you to the next level of distinction.
+        Show your commitment to a sustainable future by sharing this badge. 🎉 Let's inspire others to join the movement! 💙 \n\n #ProjectBlue \n #SustainabilityChampion \n\n Thank you for being a vital part of our ocean-saving community! 🐬🌊""")
+    
+    with col_2:
+        st.subheader("**Share this to your friends!**")
+        if result == "Explorer Starfish":
+            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T1.png.png"
+            image = Image.open(image_path)
+            I1 = ImageDraw.Draw(image)
+            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(143, 55, 51))
+            st.image(image, caption = "Member Status", use_column_width = True)
+            image.save("Member Status_Shareable T1.png")
+        if result == "Steward Jellyfish":
+            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T2.png.png"
+            image = Image.open(image_path)
+            I1 = ImageDraw.Draw(image)
+            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(223, 178, 95))
+            st.image(image, caption = "Member Status", use_column_width = True)
+            image.save("Member Status_Shareable T2.png")
+        if result == "Guardian Crab":
+            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T3.png.png"
+            image = Image.open(image_path)
+            I1 = ImageDraw.Draw(image)
+            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(195, 81, 107))
+            st.image(image, caption = "Member Status", use_column_width = True)
+            image.save("Member Status_Shareable T3.png")
+        if result == "Defender Dolphin":
+            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T4.png.png"
+            image = Image.open(image_path)
+            I1 = ImageDraw.Draw(image)
+            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(139, 167, 73))
+            st.image(image, caption = "Member Status", use_column_width = True)
+            image.save("Member Status_Shareable T4.png")
+        if result == "Sentinel Whale":
+            image_path = r"C:\Users\Rasheed\Desktop\IEdeathon-2024\Admin\Member Status_Shareable T5.png.png"
+            image = Image.open(image_path)
+            I1 = ImageDraw.Draw(image)
+            myFont = ImageFont.truetype('Poppins-Bold.ttf', 65)
+            I1.text((540,1150),member_info['First Name'], font=myFont, anchor="mm", fill=(77, 137, 146))
+            st.image(image, caption = "Member Status", use_column_width = True)
+            image.save("Member Status_Shareable T5.png")
     
     
