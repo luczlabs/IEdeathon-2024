@@ -8,8 +8,8 @@ colors = {
 
 text = {
 
-    'donate_description' : 'Lorem ipsum dolor sit amet',
-    'donate_done' : 'Lorem ipsum dolor sit amet',
+    'donate_description' : 'Help us make waves and impact a better tomorrow.',
+    'donate_done' : 'Thank you so much for donating!',
 
 
     'Landing Page' : {
@@ -41,7 +41,7 @@ text = {
                 "Exclusive Events": "Attend exclusive events, webinars, and gatherings, gaining access to unique learning experiences and networking opportunities within the environmental conservation sector."
             }
         },
-        'apply' : 'Lorem ipsum dolor sit amet'
+        'apply' : 'Ready to start your journey with us? Click the apply button to be directed to the Application Page.'
     },
 
     'Application Page' : {
@@ -69,7 +69,7 @@ text = {
     },
 
     'Organizational Structure Page' : {
-        'description' : 'Lorem ipsum dolor sit amet.'
+        'description' : 'Welcome to the Organizational Structure Page where you\'ll get deep dive of each team that makes up Project Blue!'
     },
 
     'About Us Page' : {
@@ -78,7 +78,7 @@ text = {
         'Partners and Sponsors' : """Project Blue cultivates extensive collaborations with governmental bodies, public communities, and private organizations—highlighting our commitment to collective action and shared responsibility in addressing environmental challenges. Driven by a shared advocacy, these collaborations encompass diverse projects, such as bottle collections, donation of innovative solutions, cleanup drives, educational talks, and more; this amplifies our impact and reinforces our dedication to fostering positive environmental change across various domains.""",
         'Founder' : 'Adem Inovejas',
         'Founder Photo' : 'About Us_Founder.jpg',
-        'History' : """Adem Inovejas, a second-year BS Mechanical Engineering student at DLSU - Manila, hails from the towns of Sinait and San Esteban, Ilocos Sur. Despite his roots, he spent his formative years in Manila, where his family chose to reside during the COVID-19 lockdown for safetaisy reasons. Since March of 2020, Adem and his family have not returned to Manila. An aficionado of beach environments and water activities such as surfing and diving, Adem has observed a disconcerting prevalence of trash along the shores, even in lesser-known beach locations. The genesis of our organization traces back to Adem's birthday, when what began as a simple cleanup idea evolved into a formalized entity. Recognizing the inadequacy of cleanups alone and the imperative for sustainable initiatives, Adem embarked on a comprehensive approach. The inaugural project centered around his favorite beach, where a cleanup ensued, complemented by the donation of three trash bins and a post-cleanup discussion on sustainability with barangay officials. Adem's initiative gained momentum as he shared his birthday plan on Instagram, garnering substantial support for the cause. The organization's inception marks a pivotal step towards addressing the persistent issue of beach pollution and advancing sustainable practices.""",
+        'History' : """Adem Inovejas, a second-year BS Mechanical Engineering student at DLSU - Manila, hails from the towns of Sinait and San Esteban, Ilocos Sur. Despite his roots, he spent his formative years in Manila, where his family chose to reside during the COVID-19 lockdown for safetaisy reasons. Since March of 2020, Adem and his family have not returned to Manila. An aficionado of beach environments and water activities such as surfing and diving, Adem has observed a disconcerting prevalence of trash along the shores, even in lesser-known beach locations. The genesis of our organization traces back to Adem's birthday, when what began as a simple cleanup idea evolved into a formalized entity. Recognizing the inadequacy of cleanups alone and the imperative for sustainable initiatives, Adem embarked on a comprehensive approach. The inaugural project centered around his favorite beach, where a cleanup ensued, complemented by the donation of three trash bins and a post-cleanup discussion on sustainability with barangay officials. Adem's initiative gained momentum as he shared his birthday plan on Instagram, garnering substantial support for the cause. Founded in 2020 and formerly called Project Blue Ilocos, the organization's inception marks a pivotal step towards addressing the persistent issue of beach pollution and advancing sustainable practices.""",
     },
 
     'Upcoming Events Page' : {
