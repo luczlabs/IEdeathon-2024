@@ -14,7 +14,7 @@ section_text = text['Project Evaluation Report Page']
 
 
 # Title
-st.caption('EXIT PROCESS PAGE')
+st.caption('PROJECT EVALUATION REPORT PAGE')
 add_vertical_space(1)
 st.markdown(f"""
     <div style="line-height:450%;">
@@ -28,3 +28,8 @@ add_vertical_space(2)
 
 # Content
 st.write(section_text['Message'])
+
+with st.container(border=True):
+    st.markdown(f'<p style="margin-left:20px; margin-top:-35px; font-size:40px; color:{main_color};"><strong>Project Archive 👥</p>', unsafe_allow_html=True)
+    st.write("Delve into our Project Archive, a repository of past projects. Gain insights, lessons learned, and best practices from previous initiatives. This archive serves as a valuable knowledge base for future projects.")
+    archive = st.button('View Project Archive', type='primary')
