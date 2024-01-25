@@ -56,7 +56,10 @@ with st.container(border=True):
 # Row 4
 with st.container(border=True):
     st.subheader('History')
-    st.image(get_image(section_text['Founder Photo']), width=300)
-    st.subheader(section_text['Founder'])
-    st.write(section_text['Founding Date'])
+
+    col1, col2, col3 = st.columns([0.23,0.3,0.3])
+    col2.image(get_image(section_text['Founder Photo']), width=300)
+
+    st.markdown(f'<h1 style="color:{main_color};font-size:24px;font-weight:600;text-align:center;">{section_text["Founder"]}</h1>', unsafe_allow_html=True)
+
     st.write(section_text['History'])
