@@ -143,7 +143,7 @@ organization_structure = {
             "Research": "The Research team conducts studies and gathers data related to environmental conservation. They contribute valuable insights to inform Project Blue's initiatives and decision-making processes.",
             "Marine Biologist": "The Marine Biologist provides specialized knowledge on marine ecosystems and biodiversity. They guide the organization in implementing projects that align with scientific principles and environmental conservation efforts.",
         },
-        "Testimonial": "Lorem ipsum\nLorem ipsum\n\nLorem ipsum"
+        "Testimonial": "Emily Rodriguez\nInternals\n\nI am honored to serve as a member of the Internals Committee at Project Blue. The dedication and passion of our team members have created a vibrant and supportive environment. As part of the Internals Committee, I've had the privilege of witnessing the seamless collaboration among committee members and their tireless efforts to streamline organizational processes. Together, we work towards fostering a sense of unity within the organization, ensuring that every member feels valued and connected. Project Blue's commitment to excellence is truly reflected in the collaborative spirit of the Internals Committee."
     },
     "Creatives": {
         "Committee Description": "Unleash Your Creative Wave",
@@ -159,7 +159,7 @@ organization_structure = {
         "Position Description": {
             "Treasurer": "The Treasurer manages the financial aspects of Project Blue, including budgeting, financial planning, and expenditure tracking. They play a key role in ensuring fiscal responsibility and transparency within the organization.",
         },
-        "Testimonial": "Lorem ipsum\nLorem ipsum\n\nLorem ipsum"
+        "Testimonial": "Alex Thompson\nFinance\n\nBeing a part of the Finance Committee at Project Blue has been an enriching experience. The team's commitment to financial transparency and strategic planning is commendable. As a committee member, I've had the opportunity to contribute to budgeting, financial analysis, and resource allocation, ensuring that our organization operates efficiently. Project Blue's dedication to responsible financial management inspires confidence, making it a standout in the nonprofit sector. It's truly fulfilling to be part of a team that values fiscal responsibility and understands the impact it has on our ability to achieve our mission."
     },
     "The Boat Team (Pacis Boys)": {
         "Committee Description": "Sailing Towards Conservation",
@@ -168,7 +168,7 @@ organization_structure = {
         "Position Description": {
             "Members": "The Boat Team is responsible for projects related to floating fish cages and marine safety. They collaborate with the Engineering Team, Marine Biologist, and other relevant committees to implement and oversee initiatives that contribute to marine conservation and safety.",
         },
-        "Testimonial": "Lorem ipsum\nLorem ipsum\n\nLorem ipsum"
+        "Testimonial": "Jordan Patel\nBoat Team\n\nJoining the Boat Team Committee at Project Blue has allowed me to combine my love for the outdoors with a commitment to environmental causes. Our team works tirelessly to manage and oversee projects related to floating fish cages and life vests. The camaraderie and shared enthusiasm within the Boat Team make every project a memorable and impactful experience. Project Blue's emphasis on hands-on initiatives and the dedication of the Boat Team members highlight the organization's commitment to making a tangible difference in our communities. It's a privilege to contribute to such a dynamic and action-oriented committee."
     }
 }
 
