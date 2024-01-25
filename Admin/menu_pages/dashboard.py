@@ -143,7 +143,8 @@ with st.container(border=True, height=421):
         'Internals': 6,
         'Creatives': 6,
         'Engineering': 6,
-        'External-SocMed': 6
+        'External-SocMed': 6,
+        'External-Public Relations':6
     }
     df_24['Members'] = 1 
     df_24_grouped = df_24.groupby(['Committee']).agg({'Members': 'sum'}).reset_index()
