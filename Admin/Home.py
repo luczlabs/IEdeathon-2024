@@ -73,11 +73,11 @@ if not check_password():
 # Welcome
 show_pages(
     [
-        Page('Home.py', 'Log-in', '👤'),
-        Page('menu_pages/dashboard.py', 'Project Blue Dashboard', '📊'),
-        Page('menu_pages/reports.py', 'Project Reports', '📄'),
-        Page('menu_pages/members.py', 'Members', '✋'),
-        Page('menu_pages/exit.py', 'Exit Process', '👋')
+        Page('Admin/Home.py', 'Log-in', '👤'),
+        Page('Admin/menu_pages/dashboard.py', 'Project Blue Dashboard', '📊'),
+        Page('Admin/menu_pages/reports.py', 'Project Reports', '📄'),
+        Page('Admin/menu_pages/members.py', 'Members', '✋'),
+        Page('Admin/menu_pages/exit.py', 'Exit Process', '👋')
     ]
 
 )
