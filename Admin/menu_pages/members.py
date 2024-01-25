@@ -67,7 +67,11 @@ col_1, col_2=st.columns(2)
 
 if tier:
     # Call the function when the button is clicked
-    result = tiername(30, 2, 0)
+    result = tiername(
+        member_info['Attendance Rating'],
+        member_info['No. of Projects Involved'],
+        member_info['No. of Projects Led']
+    )
     with col_1:
         with st.container(border=True):
             st.write(f"""🌊 **Project Blue Distinction Unlocked!** 🌟 \n\n As a **{result}**, you're making waves in environmental conservation with Project Blue! 🌍✨\n\nYour Project Blue score sets you apart, propelling you to the next level of distinction.
