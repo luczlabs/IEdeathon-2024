@@ -137,21 +137,23 @@ add_vertical_space(2)
 
 # Apply
 st.caption('APPLY TODAY')
-col1, col2 = st.columns(2)
-with col1:
-    st.write(section_text['apply'])
-    apply = st.button('Apply now')
-    if apply:
-        switch_page('application')
-with col2:
-    st.image(get_image('About Us_Awards - ASEAN Youth Eco-Champions.jpg'))
+with st.container(border=True):
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(section_text['apply'])
+        apply = st.button('Apply now')
+        if apply:
+            switch_page('application')
+    with col2:
+        st.image(get_image('About Us_Awards - ASEAN Youth Eco-Champions.jpg'))
 add_vertical_space(2)
 
 
 # Donate
 st.caption('DONATE TODAY')
-st.write(text['donate_description'])
-donate = st.button('Donate now', type='primary', on_click=donate_button)
+with st.container(border=True):
+    st.write(text['donate_description'])
+    donate = st.button('Donate now', type='primary', on_click=donate_button)
 if 'donate' not in ss:
     ss.donate = False
 if ss.donate:
@@ -178,4 +180,5 @@ add_vertical_space(2)
 
 # Sponsors and partners
 st.caption('OUR SPONSORS')
-st.image(get_image('Landing Page_Partners and Sponsors.png'))
+with st.container(border=True):
+    st.image(get_image('Landing Page_Partners and Sponsors.png'))

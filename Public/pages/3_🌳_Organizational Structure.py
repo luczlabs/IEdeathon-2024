@@ -23,6 +23,8 @@ st.markdown(f"""
     </div>""",
     unsafe_allow_html=True
 )
+st.write(section_text['description'])
+
 add_vertical_space(2)
 
 
@@ -38,7 +40,8 @@ with st.container(border=True):
 # Committees
 for committee,data in organization_structure.items():
     with st.container(border=True):
-        st.header(committee)        
+
+        st.markdown(f'<h1 style="color:{main_color};font-size:36px;font-weight:600;">{committee}</h1>', unsafe_allow_html=True)
         st.write(f"*{data['Committee Description']}*!")
         st.write(data['Committee Invitation'])
 
@@ -47,4 +50,7 @@ for committee,data in organization_structure.items():
             for pos, desc in data['Position Description'].items():
                 st.write(f"**{pos}**: {desc}")
         with tab2:
-            st.write(data['Testimonial'])
+            testimonial = data['Testimonial'].split('\n')
+            st.write(f'**{testimonial[0].title()}**')
+            st.write(f'*{testimonial[1].title()}*')
+            st.write(testimonial[-1])

@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_extras.add_vertical_space import add_vertical_space
 from streamlit_gsheets import GSheetsConnection
 from st_pages import Page, Section,show_pages, add_page_title
+from streamlit_extras.switch_page_button import switch_page
 
 
 # Imported
@@ -11,7 +12,6 @@ from data import text, colors, get_image
 # Variables
 ss = st.session_state
 main_color = colors['main']
-# section_text = text['']
 
 
 # Google Sheets Connection
@@ -77,5 +77,9 @@ show_pages(
     ]
 
 )
+
+switch_page('project blue dashboard')
+hide_pages(['log-in'])
+
 
 

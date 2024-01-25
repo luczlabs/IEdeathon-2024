@@ -41,8 +41,7 @@ text = {
                 "Exclusive Events": "Attend exclusive events, webinars, and gatherings, gaining access to unique learning experiences and networking opportunities within the environmental conservation sector."
             }
         },
-
-        'apply' : 'Lorem ipsum dolor sit amet',
+        'apply' : 'Lorem ipsum dolor sit amet'
     },
 
     'Application Page' : {
@@ -51,7 +50,7 @@ text = {
             'description' : 'Joining Project Blue means becoming an integral part of a community driven by a shared dedication to making a positive change. As a member, you will have the opportunity to engage in diverse projects, both on the ground and online—making a real impact on ocean pollution and marine conservation. 🌊',
             'steps' : """1. Answer the provided Google Form with the necessary information.
             2. Wait for an email confirmation which will provide details about the status of your application and further instructions.
-            3.Consider donating funds to support the initiatives of the organization.
+            3. Consider donating funds to support the initiatives of the organization.
             """
         },
         
@@ -70,7 +69,7 @@ text = {
     },
 
     'Organizational Structure Page' : {
-
+        'description' : 'Lorem ipsum dolor sit amet.'
     },
 
     'About Us Page' : {
@@ -145,7 +144,7 @@ organization_structure = {
             "Research": "The Research team conducts studies and gathers data related to environmental conservation. They contribute valuable insights to inform Project Blue's initiatives and decision-making processes.",
             "Marine Biologist": "The Marine Biologist provides specialized knowledge on marine ecosystems and biodiversity. They guide the organization in implementing projects that align with scientific principles and environmental conservation efforts.",
         },
-        "Testimonial": "Lorem ipsum"
+        "Testimonial": "Lorem ipsum\nLorem ipsum\n\nLorem ipsum"
     },
     "Creatives": {
         "Committee Description": "Unleash Your Creative Wave",
@@ -161,7 +160,7 @@ organization_structure = {
         "Position Description": {
             "Treasurer": "The Treasurer manages the financial aspects of Project Blue, including budgeting, financial planning, and expenditure tracking. They play a key role in ensuring fiscal responsibility and transparency within the organization.",
         },
-        "Testimonial": "Lorem ipsum"
+        "Testimonial": "Lorem ipsum\nLorem ipsum\n\nLorem ipsum"
     },
     "The Boat Team (Pacis Boys)": {
         "Committee Description": "Sailing Towards Conservation",
@@ -170,7 +169,7 @@ organization_structure = {
         "Position Description": {
             "Members": "The Boat Team is responsible for projects related to floating fish cages and marine safety. They collaborate with the Engineering Team, Marine Biologist, and other relevant committees to implement and oversee initiatives that contribute to marine conservation and safety.",
         },
-        "Testimonial": "Lorem ipsum"
+        "Testimonial": "Lorem ipsum\nLorem ipsum\n\nLorem ipsum"
     }
 }
 

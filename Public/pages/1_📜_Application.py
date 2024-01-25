@@ -42,6 +42,8 @@ with tab1:
 
     member_steps = section_text['member']['steps'].split('\n')
     st.write(f'**{member_steps[0]}**')
+
+    st.image(get_image('Header_Application Form.png'))
     
     html_str = """
                 <!DOCTYPE html> 
@@ -52,8 +54,8 @@ with tab1:
         </html> 
         """
     st.markdown(html_str, unsafe_allow_html=True)
-    st.divider()
 
+    add_vertical_space(1)
     for i in range(1,len(member_steps)):
         st.write(f'{member_steps[i]}')
 
@@ -67,6 +69,8 @@ with tab2:
 
     ambassador_steps = section_text['ambassador']['steps'].split('\n')
     st.write(f'**{ambassador_steps[0]}**')
+
+    st.image(get_image('Header_Ambassador Form.png'))
     
     html_str = """
                 <!DOCTYPE html> 
@@ -77,8 +81,8 @@ with tab2:
         </html> 
         """
     st.markdown(html_str, unsafe_allow_html=True)
-    st.divider()
 
+    add_vertical_space(1)
     for i in range(1,len(ambassador_steps)):
         st.write(f'{ambassador_steps[i]}')
 
@@ -86,8 +90,9 @@ with tab2:
 # Donate
 st.divider()
 st.caption('DONATE TODAY')
-st.write(text['donate_description'])
-donate = st.button('Donate now', type='primary', on_click=donate_button)
+with st.container(border=True):
+    st.write(text['donate_description'])
+    donate = st.button('Donate now', type='primary', on_click=donate_button)
 if 'donate' not in ss:
     ss.donate = False
 if ss.donate:
