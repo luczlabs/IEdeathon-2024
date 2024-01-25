@@ -29,6 +29,18 @@ add_vertical_space(2)
 # Content
 st.write(section_text['Message'])
 
+html_str = """
+            <!DOCTYPE html> 
+    <html> 
+    <body> 
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGAdALmhhfIyK-_tfEN9Ftsnkf27h7eyEzRZ36gSltVX1byA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </body> 
+    </html> 
+    """
+st.markdown(html_str, unsafe_allow_html=True)
+
+add_vertical_space(1)
+
 with st.container(border=True):
     st.subheader('Project Archive 👥')
     st.write("Delve into our Project Archive, a repository of past projects. Gain insights, lessons learned, and best practices from previous initiatives. This archive serves as a valuable knowledge base for future projects.")
