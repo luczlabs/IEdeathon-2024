@@ -4,3 +4,4 @@ pandas
 st-gsheets-connection
 plotly
 st-pages
+PIL
