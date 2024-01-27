@@ -6,6 +6,8 @@ colors = {
     'white':'#FFFFFF'
 }
 
+logo_imglink = """https://scontent.fcrk3-2.fna.fbcdn.net/v/t39.30808-6/255383609_299187095396681_2988669499199278523_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFo6hJTCZS0TVeNkLIlmutVwQyOHwkgNGDBDI4fCSA0YIuhM2mYpOpbieHQff9tL8MkY3b-6Tri8oew6dpq3CNi&_nc_ohc=6fj28N8frCcAX_UH13C&_nc_ht=scontent.fcrk3-2.fna&cb_e2o_trans=q&oh=00_AfBedDlTVpTK7oWGRfW7MM_cT1C01BT3HrFEU-HNM_PPUA&oe=65B8B4A9"""
+
 text = {
 
     'Membership Status' : {

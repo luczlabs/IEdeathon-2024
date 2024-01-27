@@ -6,7 +6,7 @@ from streamlit_extras.switch_page_button import switch_page
 
 
 # Imported
-from data import text, colors, get_image
+from data import logo_imglink, text, colors, get_image
 
 
 # Variables
@@ -25,6 +25,8 @@ df = conn.read(spreadsheet=member_database)
 
 
 # Title
+st.image(logo_imglink, width=100)
+add_vertical_space(1)
 st.caption('ADMIN PAGE')
 add_vertical_space(1)
 st.markdown(f"""

@@ -7,7 +7,7 @@ from streamlit_extras.switch_page_button import switch_page
 
 
 # Imported
-from data import landing_page_impact, text, colors, get_image, donation_methods
+from data import logo_imglink, landing_page_impact, text, colors, get_image, donation_methods
 
 
 # Variables
@@ -25,22 +25,9 @@ def donate_button():
 st.set_page_config(page_title='Project Blue', page_icon='💙', layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 
-# Background
-# background_image = f"""
-# <style>
-# [data-testid="stAppViewContainer"] > .main \u007b
-#     background-image: url('{section_images['background_image']}');
-#     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
-#     background-position: center;  
-#     background-repeat: ;
-# \u007d
-# </style>
-# """
-
-# st.markdown(background_image, unsafe_allow_html=True)
-
-
 # Title
+st.image(logo_imglink, width=100)
+add_vertical_space(1)
 st.caption('THIS IS PROJECT BLUE')
 add_vertical_space(1)
 st.markdown(f"""
