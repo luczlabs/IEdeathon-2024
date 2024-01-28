@@ -13,7 +13,7 @@ ss = st.session_state
 main_color = colors['main']
 section_text = text['Projects Page']
 
-z
+
 # Title
 st.caption('APPLICATION PAGE')
 add_vertical_space(1)
