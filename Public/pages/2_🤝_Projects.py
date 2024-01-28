@@ -13,7 +13,7 @@ ss = st.session_state
 main_color = colors['main']
 section_text = text['Projects Page']
 
-
+z
 # Title
 st.caption('APPLICATION PAGE')
 add_vertical_space(1)
@@ -42,7 +42,7 @@ df['Year'] = df['Year'].astype(int)
 col1, col2 = st.columns(2)
 with col1:
     start = st.number_input('Starting year', min_value=df['Year'].min(), max_value=df['Year'].max(), value=df['Year'].min())
-    add_end = st.checkbox('Add ending year')
+    add_end = st.checkbox('Add ending year', value=True)
 if add_end:
     with col2:
         end = st.number_input('Ending year', min_value=df['Year'].min(), max_value=df['Year'].max(), value=df['Year'].max())
