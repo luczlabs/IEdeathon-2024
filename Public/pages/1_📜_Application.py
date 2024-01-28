@@ -88,7 +88,6 @@ with tab2:
 
 
 # Donate
-st.divider()
 st.caption('DONATE TODAY')
 with st.container(border=True):
     st.write(text['donate_description'])
@@ -96,20 +95,31 @@ with st.container(border=True):
 if 'donate' not in ss:
     ss.donate = False
 if ss.donate:
-    def donate():
-        with st.container(border=True):
-            col1, col2= st.columns([0.4,0.6], gap='medium')
-            with col1:
-                option = st.radio('Choose your donation method', donation_methods.keys())
-                done_donate = st.button('Done donating')
-            with col2:
-                add_vertical_space(2)
-                st.image(get_image(f'Landing Page_Donation {option}{donation_methods[option][2]}'), width=100)
-                st.subheader(donation_methods[option][0])
-                st.write(donation_methods[option][1])
-            if done_donate:
-                st.balloons()
-                st.write(text['donate_done'])
-                st.text_input('Your name')
+    def create_donation_image(name):
+        image_path = r"Public/Donation Shareable.png"
+        image = Image.open(image_path)
+        I1 = ImageDraw.Draw(image)
+        myFont = ImageFont.truetype('Public/Poppins-Bold.ttf', 54)
+        I1.text((540,1418), name, font=myFont, anchor="mm", fill=(22, 77, 118))
+        st.subheader('Share this with your friends!')
+        st.image(image, caption = "", width=500)
+        image.save("Donation_Shareable.png")
 
-    donate()
+    with st.container(border=True):
+        col1, col2= st.columns([0.4,0.6], gap='medium')
+        with col1:
+            option = st.radio('Choose your donation method', donation_methods.keys())
+        with col2:
+            add_vertical_space(2)
+            st.image(get_image(f'Landing Page_Donation {option}{donation_methods[option][2]}'), width=100)
+            st.subheader(donation_methods[option][0])
+            st.write(donation_methods[option][1])
+    with st.expander('Done donating?'):
+        st.write(text['donate_done'])
+        with st.form('form', border=False):
+            name = st.text_input('Your name')
+            submitted = st.form_submit_button("Submit")
+            if submitted:
+                st.balloons()
+                create_donation_image(name)
+        add_vertical_space(1)

@@ -11,7 +11,7 @@ logo_imglink = """https://scontent.fcrk3-2.fna.fbcdn.net/v/t39.30808-6/255383609
 text = {
 
     'donate_description' : 'Help us make waves and impact a better tomorrow.',
-    'donate_done' : 'Thank you so much for donating!',
+    'donate_done' : 'Thank you so much for donating! You deserve a shareable donation acknowledgment.',
 
 
     'Landing Page' : {
@@ -177,7 +177,7 @@ organization_structure = {
 upcoming_events = {
     'Bottle Collection Drive across Metro Manila and Ilocos Region' : {
         'description' : """Project Blue, through its partnership with schools, businesses, barangays, and other public spaces across Metro Manila and Ilocos Region, will collect plastic bottles. Through this effort, the organization aims to address environmental challenges and create positive change. These collected plastic bottles will undergo a transformative process, where they will be repurposed into innovative solutions such as Ahon Life-Savers, SustainaBoats, and AquaCages.""",
-        'date' : 'January 27, 2024'
+        'date' : 'February 28, 2024'
     }
 }
 
