@@ -1,7 +1,9 @@
 # Packages
 import streamlit as st
 from streamlit_extras.add_vertical_space import add_vertical_space
-
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
 
 # Imported
 from data import text, colors, get_image, donation_methods
