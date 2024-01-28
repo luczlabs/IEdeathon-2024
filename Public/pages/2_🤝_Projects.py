@@ -48,7 +48,7 @@ if add_end:
         end = st.number_input('Ending year', min_value=df['Year'].min(), max_value=df['Year'].max(), value=df['Year'].max())
 else:
     end = start
-year_filter = [start, end]
+year_filter = [year for year in range(start, end+1)]
 filtered_df = df.query('Year in @year_filter')
 
 
