@@ -42,6 +42,9 @@ add_vertical_space(2)
 # User Authentication
 def check_password():
 
+    # Sample
+    st.write('Try this sample member ID: V623JO')
+
     # Log-in
     def log_in():
         with st.form('Credentials'):
