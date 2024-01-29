@@ -44,4 +44,4 @@ add_vertical_space(1)
 with st.container(border=True):
     st.subheader('Project Archive 👥')
     st.write("Delve into our Project Archive, a repository of past projects. Gain insights, lessons learned, and best practices from previous initiatives. This archive serves as a valuable knowledge base for future projects.")
-    archive = st.button('View Project Archive', type='primary')
+    archive = st.link_button('View Project Archive', """https://docs.google.com/spreadsheets/d/1n71t2RBpKd78ioUPHFhmqvvg-yw7Ogw--5caeJE8x_8/edit?usp=sharing""" ,type='primary')
