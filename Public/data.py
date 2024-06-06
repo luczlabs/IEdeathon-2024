@@ -2,7 +2,7 @@ colors = {
     'black':'#3133F',
     'main':'#164D76',
     'secondary':'0077B6',
-    'accent':'#00B4DB',
+    'accent':'#FF7F50',
     'white':'#FFFFFF'
 }
 
